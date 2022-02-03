@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    color: white;
+    background-color: black;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 2%;
+    height: 80px;
+}
+
+header p{
+    font-size: large;
+    font-weight: bold;
+}
+
+header .btn-again{
+
+    padding: 10px 3%;
+    font-weight: bold;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+}
+
+.middle h1{
+    text-align: center;
+}
+
+.middle .output{
+
+    text-align: center;
+    padding: 30px 5%;
+    margin-left: 45%;
+    border: 2px solid black;
+    width: 50px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: rgb(150, 47, 47);
+}
+
+.middle .line{
+
+    height: 5px;
+    background-color: white;
+}
+.last{
+    display: flex;
+    flex-direction: row;
+
+    /* @media(min-width: 650px) {
+        
+        flex-direction: column;
+    } */
+}
+.last .last-left{
+
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+}
+
+.last .last-left .number-enter{
+
+    padding: 40px 4%;
+    width: 30%;
+    margin-top: 15%;
+    margin-left: 25%;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    border: 3px solid white;
+    background-color: black;
+    color: white;
+}
+
+.last .last-left .btn-check{
+
+    margin-top: 2%;
+    padding: 20px 4%;
+    width: 40%;
+    margin-left: 20%
+}
+
+.last .last-right{
+  display: flex;
+  flex-direction: column;
+}
+
+.last .last-right{
+
+    margin-top: 8%;
+    margin-left: 10%;
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+
+.last .last-right .space{
+
+    margin-top: 10%;
+}
+
