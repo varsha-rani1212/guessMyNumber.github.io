@@ -1,7 +1,7 @@
 'use strict';
 
 
-
+//pop-up window
 const openButton = document.querySelector('.click-btn');
 const modalWindow = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
@@ -9,6 +9,7 @@ const closeButton = document.querySelector('.close-modal');
 // openButton.textContent="varsha";
 console.log(openButton);
 
+//main function
 openButton.addEventListener('click',function(){
     modalWindow.classList.remove('hidden');
     overlay.classList.remove('hidden');
@@ -18,6 +19,20 @@ closeButton.addEventListener('click', function(){
     modalWindow.classList.add('hidden');
     overlay.classList.add('hidden');
 })
+
+
+//'esc' key press
+document.addEventListener('keydown', function (e) {
+   
+    if(e.key === 'Escape'){
+
+        if(modalWindow.classList.contains('hidden') != true){
+            modalWindow.classList.add('hidden');
+            overlay.classList.add('hidden');
+        }
+    }
+    
+});
 
 
 
