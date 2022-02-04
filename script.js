@@ -1,5 +1,29 @@
 'use strict';
 
+
+
+const openButton = document.querySelector('.click-btn');
+const modalWindow = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
+const closeButton = document.querySelector('.close-modal');
+// openButton.textContent="varsha";
+console.log(openButton);
+
+openButton.addEventListener('click',function(){
+    modalWindow.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+});
+
+closeButton.addEventListener('click', function(){
+    modalWindow.classList.add('hidden');
+    overlay.classList.add('hidden');
+})
+
+
+
+
+
+
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 console.log(secretNumber);
 let score = 20;
