@@ -11,14 +11,24 @@
     
   <header>
      <p> (Between 1 to 20) </p>
+     <button class = "btn-again click-btn">Instruction</button>
      <button class = "btn-again">Again!</button>
+      
+     <div class="overlay hidden"></div>
   </header>
+    
+   <div class="modal hidden">
+    <button class="close-modal">&times;</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ab molestiae, ex quia debitis ullam consequatur quas fugiat quam at?</p>
+  </div>
 
   <div class="middle">
       <h1>Guess My Number!</h1>
       <div class = "line"></div>
       <div class = "output">?</div>
       <div class = "line"></div>
+      
+      <div class="overlay hidden"></div>
   </div>
 
   <div class="last">
@@ -33,6 +43,8 @@
         <p class="present-score space">💯 Score <span class="current">20</span></p>
         <p class="highest-score space">🥇 Highscore <span class="total-score">0</span></p>
     </div>
+      
+      <div class="overlay hidden"></div>
   </div>
 
    <script src="script.js"></script>
