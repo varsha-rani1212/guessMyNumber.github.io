@@ -28,6 +28,12 @@ header .btn-again{
     font-weight: bold;
 }
 
+header .btn1{
+
+    padding: 10px 3%;
+    font-weight: bold;
+}
+
 .middle {
     display: flex;
     flex-direction: column;
@@ -147,7 +153,4 @@ header .btn-again{
     backdrop-filter: blur(3px);
     z-index: 4;
 } 
-
-
-
 
